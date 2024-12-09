@@ -301,6 +301,144 @@ body {
   background-color: rgba(0,0,0,0);
   border-radius: 0
 }
+.input-policy {
+  display: none
+}
+.input-policy:checked+label::before {
+  border-color: var(--black);
+  background-color: var(--black)
+}
+.input-policy:checked+label::after {
+  display: block
+}
+.label-policy {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500
+}
+.label-policy::after,
+.label-policy::before {
+  position: absolute;
+  content: "";
+  left: 0
+}
+.label-policy::before {
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 2px
+}
+.label-policy::after {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background: url(../img/check.webp) 0 0/100% 100% no-repeat;
+  z-index: 1
+}
+.modal {
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+  --bg-overlay-hide: rgba(0, 0, 0, 0)
+}
+.modal.open .modal__overlay,
+.modal.open .modal__window {
+  opacity: 1;
+  z-index: 1000
+}
+.modal.open .modal__overlay {
+  background-color: var(--bg-overlay);
+  overflow-y: auto
+}
+.modal.open .modal__window {
+  -webkit-transform: translateY(0);
+  transform: translateY(0)
+}
+.modal.hide .modal__overlay,
+.modal.hide .modal__window {
+  opacity: 1;
+  z-index: 1000
+}
+.modal.hide .modal__overlay {
+  background-color: var(--bg-overlay-hide)
+}
+.modal.hide .modal__window {
+  opacity: 0
+}
+.modal__overlay,
+.modal__window {
+  opacity: 0;
+  z-index: -10
+}
+.modal__overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  inset: 0;
+  background-color: var(--bg-overlay);
+  transition: background-color .5s ease
+}
+.modal__overlay::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  display: none
+}
+.modal__window {
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 10px;
+  -webkit-transform: translateY(25px);
+  transform: translateY(25px);
+  opacity: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: calc(100vw - 32px);
+  width: 515px;
+  margin-top: 50px;
+  background-color: #fff;
+  box-shadow: 0 10px 44px 0 rgba(0,0,0,.15);
+  transition: opacity .5s ease,-webkit-transform .5s ease;
+  transition: transform .5s ease,opacity .5s ease;
+  transition: transform .5s ease,opacity .5s ease,-webkit-transform .5s ease
+}
+.modal__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px
+}
+.modal__title {
+  font-size: 25px;
+  margin: 0;
+  color: #000
+}
+.modal__close {
+  width: 24px;
+  height: 24px;
+  transition: color .2s ease
+}
+.modal__icon-close {
+  width: 100%;
+  height: 100%
+}
+.modal__input {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--mercury);
+  margin-bottom: 15px
+}
+.modal__btn {
+  width: 100%;
+  margin-bottom: 15px
+}
 .header {
   background-color: #fff
 }
@@ -374,7 +512,7 @@ body {
   transform: rotate(45deg)
 }
 .header__catalog-btn.active .header__catalog-burger span:nth-child(2) {
-  display: none
+  display: none!important
 }
 .header__catalog-btn.active .header__catalog-burger span:last-child {
   -webkit-transform: rotate(-45deg);
@@ -390,7 +528,7 @@ body {
   gap: 3px
 }
 .header__catalog-burger span {
-  display: block;
+  display: block!important;
   width: 100%;
   height: 2px;
   border-radius: 8px;
@@ -616,6 +754,10 @@ body {
   }
 }
 @media (max-width:1024px) {
+  .modal__window {
+    padding: 40px 24px;
+    max-width: calc(100% - 20px)
+  }
   .header__nav-list {
     justify-content: center
   }
@@ -728,6 +870,9 @@ body {
   }
 }
 @media (max-width:479px) {
+  .modal__window {
+    max-width: calc(100% - 16px)
+  }
   .header__catalog-btn {
     border-radius: 3px
   }
@@ -760,6 +905,9 @@ body {
   .dropdown-hover__el:hover {
     color: #fff!important;
     background-color: var(--primary)
+  }
+  .modal__close:hover {
+    color: var(--black)
   }
   .header__nav-list a:hover {
     color: var(--primary)
@@ -794,6 +942,9 @@ body {
   .dropdown-hover__el:active {
     color: #fff!important;
     background-color: var(--primary)
+  }
+  .modal__close:active {
+    color: var(--black)
   }
   .header__nav-list a:active {
     color: var(--primary)

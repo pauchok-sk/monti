@@ -1,11 +1,13 @@
 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 20 20" fill="none" id="icon-arrow" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.3335 14.1667L12.5002 10L8.3335 5.83334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 22 22" fill="none" id="icon-close" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.0164 3.05114C18.6585 2.69316 18.0781 2.69316 17.7201 3.05114L11.0336 9.73767L4.34707 3.05114C3.9891 2.69316 3.40869 2.69316 3.05072 3.05114C2.69273 3.40912 2.69273 3.98953 3.05072 4.3475L9.73721 11.034L3.05073 17.7205C2.69275 18.0785 2.69275 18.6589 3.05073 19.0169C3.40871 19.3749 3.98912 19.3749 4.34709 19.0169L11.0336 12.3304L17.7201 19.0169C18.0781 19.3749 18.6585 19.3749 19.0164 19.0169C19.3744 18.6589 19.3744 18.0785 19.0164 17.7205L12.3299 11.034L19.0164 4.3475C19.3744 3.98953 19.3744 3.40912 19.0164 3.05114Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 20 20" fill="none" id="icon-location" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#bclip0_2_38)">
+<g clip-path="url(#cclip0_2_38)">
 <path d="M10 1.66667C6.77917 1.66667 4.16667 4.27917 4.16667 7.5C4.16667 11.875 10 18.3333 10 18.3333C10 18.3333 15.8333 11.875 15.8333 7.5C15.8333 4.27917 13.2208 1.66667 10 1.66667ZM10 9.58333C8.85001 9.58333 7.91667 8.65 7.91667 7.5C7.91667 6.35 8.85001 5.41667 10 5.41667C11.15 5.41667 12.0833 6.35 12.0833 7.5C12.0833 8.65 11.15 9.58333 10 9.58333Z" fill="currentColor"/>
 </g>
 <defs>
-<clipPath id="bclip0_2_38">
+<clipPath id="cclip0_2_38">
 <rect width="20" height="20" fill="currentColor"/>
 </clipPath>
 </defs>

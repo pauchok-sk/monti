@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241210012441">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241210015627">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -315,13 +315,33 @@
 					<a href="tel:+74958888888" class="header__tel">+7(495)888-88-88</a>
 					<a href="email:info@montee-pro.ru" class="header__mail">info@montee-pro.ru</a>
 				</div>
-				<button data-modal="call" data-da=".header__catalog-dropdown,860" class="btn btn-main header__call-btn">
+				<button data-modal="call" data-da=".header__catalog-dropdown,860" class="btn btn-main btn-modal header__call-btn">
 					Перезвоните мне
 				</button>
 			</div>
 		</div>
 	</header>
 
+	<div data-modal="call" class="modal">
+		<div class="modal__overlay">
+			<div class="modal__window">
+				<div class="modal__head">
+					<h2 class="modal__title">Оставьте заявку</h2>
+					<button class="btn modal__close">
+						<svg class="modal__icon-close">
+							<use xlink:href='img/icons/icons.svg#icon-close'></use>
+						</svg>
+					</button>
+				</div>
+				<form action="#">
+					<input type="tel" placeholder="Ваш телефон" class="input modal__input">
+					<button class="btn btn-main modal__btn">Оставить заявку</button>
+					<input type="checkbox" id="call-policy" class="input-policy">
+					<label for="call-policy" class="label-policy">Согласие на обработку персональных данных</label>
+				</form>
+			</div>
+		</div>
+	</div>
 	<main>
 
 
@@ -331,7 +351,7 @@
 		<div class="container">
 		</div>
 	</footer>
-	<script src="js/app.min.js?_v=20241210012441"></script>
+	<script src="js/app.min.js?_v=20241210015627"></script>
 </body>
 
 </html>

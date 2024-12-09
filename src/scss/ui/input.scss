@@ -4,3 +4,46 @@
   background-color: transparent;
   border-radius: 0;
 }
+.input-policy {
+  display: none;
+  &:checked + label {
+    &::before {
+      border-color: var(--black);
+      background-color: var(--black);
+    }
+    &::after {
+      display: block;
+    }
+  }
+}
+.label-policy {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+  }
+  &::before {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 2px;
+  }
+  &::after {
+    display: none;
+    width: 10px;
+    height: 10px;
+    background: url('@img/check.png') 0 0 / 100% 100% no-repeat;
+    z-index: 1;
+  }
+}
