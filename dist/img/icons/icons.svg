@@ -1,0 +1,14 @@
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 20 20" fill="none" id="icon-arrow" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.3335 14.1667L12.5002 10L8.3335 5.83334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 20 20" fill="none" id="icon-location" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#bclip0_2_38)">
+<path d="M10 1.66667C6.77917 1.66667 4.16667 4.27917 4.16667 7.5C4.16667 11.875 10 18.3333 10 18.3333C10 18.3333 15.8333 11.875 15.8333 7.5C15.8333 4.27917 13.2208 1.66667 10 1.66667ZM10 9.58333C8.85001 9.58333 7.91667 8.65 7.91667 7.5C7.91667 6.35 8.85001 5.41667 10 5.41667C11.15 5.41667 12.0833 6.35 12.0833 7.5C12.0833 8.65 11.15 9.58333 10 9.58333Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="bclip0_2_38">
+<rect width="20" height="20" fill="currentColor"/>
+</clipPath>
+</defs>
+</symbol><symbol viewBox="0 0 16 16" fill="none" id="icon-search" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9521 10.9642L15 15M12.6667 6.83333C12.6667 10.055 10.055 12.6667 6.83333 12.6667C3.61167 12.6667 1 10.055 1 6.83333C1 3.61167 3.61167 1 6.83333 1C10.055 1 12.6667 3.61167 12.6667 6.83333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol></svg>
