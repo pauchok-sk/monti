@@ -15,9 +15,15 @@
 @import "./ui/input";
 @import "./ui/modal";
 
+// features
+@import "./features/product";
+
 // components
 @import "./components/header";
 
-
+@import "./components/intro";
+@import "./components/brands";
+@import "./components/rec";
+@import "./components/stocks";
 
 @import "./components/footer";

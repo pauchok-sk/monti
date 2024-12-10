@@ -1,16 +1,27 @@
 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 20 20" fill="none" id="icon-arrow" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.3335 14.1667L12.5002 10L8.3335 5.83334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 11 11" fill="none" id="icon-arrow-line" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.292893 9.29289C-0.0976311 9.68342 -0.0976311 10.3166 0.292893 10.7071C0.683418 11.0976 1.31658 11.0976 1.70711 10.7071L0.292893 9.29289ZM11 1C11 0.447715 10.5523 -3.74211e-07 10 4.72575e-08L1 -1.63477e-07C0.447715 -1.63477e-07 2.8711e-07 0.447715 2.8711e-07 1C2.8711e-07 1.55228 0.447715 2 1 2L9 2L9 10C9 10.5523 9.44772 11 10 11C10.5523 11 11 10.5523 11 10L11 1ZM1.70711 10.7071L10.7071 1.70711L9.29289 0.292893L0.292893 9.29289L1.70711 10.7071Z" fill="currentColor"/>
+</symbol><symbol viewBox="0 0 25 16" fill="none" id="icon-arrow-line-2" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.292892 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31946 8.07107 0.928931C7.68054 0.538407 7.04738 0.538407 6.65685 0.928931L0.292892 7.29289ZM25 7L1 7L1 9L25 9L25 7Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 22 22" fill="none" id="icon-close" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.0164 3.05114C18.6585 2.69316 18.0781 2.69316 17.7201 3.05114L11.0336 9.73767L4.34707 3.05114C3.9891 2.69316 3.40869 2.69316 3.05072 3.05114C2.69273 3.40912 2.69273 3.98953 3.05072 4.3475L9.73721 11.034L3.05073 17.7205C2.69275 18.0785 2.69275 18.6589 3.05073 19.0169C3.40871 19.3749 3.98912 19.3749 4.34709 19.0169L11.0336 12.3304L17.7201 19.0169C18.0781 19.3749 18.6585 19.3749 19.0164 19.0169C19.3744 18.6589 19.3744 18.0785 19.0164 17.7205L12.3299 11.034L19.0164 4.3475C19.3744 3.98953 19.3744 3.40912 19.0164 3.05114Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 20 20" fill="none" id="icon-location" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#cclip0_2_38)">
+<g clip-path="url(#eclip0_2_38)">
 <path d="M10 1.66667C6.77917 1.66667 4.16667 4.27917 4.16667 7.5C4.16667 11.875 10 18.3333 10 18.3333C10 18.3333 15.8333 11.875 15.8333 7.5C15.8333 4.27917 13.2208 1.66667 10 1.66667ZM10 9.58333C8.85001 9.58333 7.91667 8.65 7.91667 7.5C7.91667 6.35 8.85001 5.41667 10 5.41667C11.15 5.41667 12.0833 6.35 12.0833 7.5C12.0833 8.65 11.15 9.58333 10 9.58333Z" fill="currentColor"/>
 </g>
 <defs>
-<clipPath id="cclip0_2_38">
+<clipPath id="eclip0_2_38">
 <rect width="20" height="20" fill="currentColor"/>
 </clipPath>
 </defs>
 </symbol><symbol viewBox="0 0 16 16" fill="none" id="icon-search" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.9521 10.9642L15 15M12.6667 6.83333C12.6667 10.055 10.055 12.6667 6.83333 12.6667C3.61167 12.6667 1 10.055 1 6.83333C1 3.61167 3.61167 1 6.83333 1C10.055 1 12.6667 3.61167 12.6667 6.83333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 20 15" fill="none" id="icon-sort" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.1667 1.66675H5.83334V3.33341H19.1667V1.66675Z" fill="currentColor"/>
+<path d="M17.5 6.66675H5.83334V8.33341H17.5V6.66675Z" fill="currentColor"/>
+<path d="M4.16668 0.833374H0.833344V4.16671H4.16668V0.833374Z" fill="currentColor"/>
+<path d="M15.8333 11.6667H5.83334V13.3334H15.8333V11.6667Z" fill="currentColor"/>
+<path d="M4.16668 10.8334H0.833344V14.1667H4.16668V10.8334Z" fill="currentColor"/>
+<path d="M4.16668 5.83337H0.833344V9.16671H4.16668V5.83337Z" fill="currentColor"/>
 </symbol></svg>

@@ -1,7 +1,10 @@
 .modal {
   --bg-overlay: rgba(0, 0, 0, 0.5);
   --bg-overlay-hide: rgba(0, 0, 0, 0);
+  visibility: hidden;
+  transition: visibility 0.5s ease;
   &.open {
+    visibility: visible;
     .modal__overlay,
     .modal__window {
       opacity: 1;

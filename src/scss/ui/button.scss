@@ -8,6 +8,7 @@
 }
 
 .btn-main {
+  @include flex-center;
   min-height: 40px;
   background-color: var(--primary);
   padding: 5px 10px;
@@ -21,5 +22,14 @@
   @include hover {
     background-color: transparent;
     color: var(--primary);
+  }
+
+  &._stroke {
+    background-color: transparent;
+    color: var(--black);
+    @include hover {
+      color: white;
+      background-color: var(--primary);
+    }
   }
 }
