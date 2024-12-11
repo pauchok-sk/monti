@@ -1,0 +1,94 @@
+.reviews {
+  overflow: hidden;
+  padding: 30px 0px 60px 0px;
+  @include tablet {
+    padding-top: 60px;
+  }
+  &__head {
+    @include flex-between;
+    margin-bottom: 48px;
+    @include tablet {
+      margin-bottom: 40px;
+    }
+    .title {
+      margin: 0;
+    }
+  }
+  &__all-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    @include hover {
+      .reviews__all-arrow {
+        transform: translate(2px, -2px);
+      }
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  &__all-rect {
+    @include flex-center;
+    border-radius: 5px;
+    background-color: var(--primary);
+    width: 32px;
+    height: 32px;
+    color: white;
+  }
+  &__all-arrow {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.2s ease;
+  }
+  &__slider {
+    @media (max-width: 1289px) {
+      overflow: visible !important;
+      .swiper-slide {
+        width: 195px !important;
+      }
+    }
+  }
+  &__gallery-btn {
+    @include flex-center;
+    position: relative;
+    width: 100%;
+    height: 275px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--primary);
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__gallery-title {
+    margin: 24px 0px 0px 0px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    @include laptop-min {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  &__btn-play {
+    @include flex-center;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+    z-index: 10;
+  }
+  &__icon-play {
+    width: 20px;
+    height: 20px;
+  }
+}

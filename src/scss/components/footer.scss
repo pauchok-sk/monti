@@ -1,0 +1,87 @@
+.footer {
+  padding-bottom: 40px;
+  &__body {
+    padding: 25px 40px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 10px;
+    @include tablet {
+      padding: 0;
+      background-color: transparent;
+      color: var(--black);
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid white;
+    @include tablet {
+      gap: 30px;
+      border-color: var(--black);
+    }
+  }
+  &__item {
+    flex: 0 1 270px;
+    @include tablet {
+      flex-basis: calc(50% - 15px);
+    }
+    @include mobile {
+      flex-basis: 100%;
+    }
+  }
+  &__item-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px 0px 25px 0px;
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+  &__item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 7px;
+    a {
+      position: relative;
+      font-size: 14px;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        height: 1px;
+        background-color: currentColor;
+        transition: right .2s ease;
+      }
+      @include hover {
+        &::before {
+          right: 0;
+        }
+      }
+    }
+  }
+  &__bottom {
+    @include flex-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 24px;
+    font-size: 14px;
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__copyright {
+    margin: 0;
+  }
+  &__policy {
+    text-decoration: underline;
+    @include hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -18,7 +18,9 @@
   color: white;
   font-size: 14px;
   font-weight: 500;
-  transition: color .2s ease, background-color .2s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
   @include hover {
     background-color: transparent;
     color: var(--primary);
@@ -31,5 +33,9 @@
       color: white;
       background-color: var(--primary);
     }
+  }
+
+  @include mobile {
+    border-radius: 5px;
   }
 }

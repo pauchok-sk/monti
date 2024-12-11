@@ -1,11 +1,12 @@
 .brands {
   position: relative;
+  display: block;
   padding: 30px 0px;
   &__title {
     margin: 0px 0px 30px 0px;
     @include tablet {
       text-align: center;
-      margin-bottom: 20px; 
+      margin-bottom: 20px;
     }
   }
   &__wrapper {
@@ -13,7 +14,7 @@
     align-items: center;
     gap: 16px;
     @include tablet {
-      gap: 12px
+      gap: 12px;
     }
   }
   &__btn-slider {

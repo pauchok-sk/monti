@@ -25,4 +25,24 @@ export default function slider() {
       }
     });
   }
+
+  const reviewsSlider = document.querySelector(".reviews__slider");
+
+  if (reviewsSlider) {
+    const swiper = new Swiper(reviewsSlider, {
+      speed: 700,
+      modules: [Autoplay],
+      spaceBetween: 30,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        1290: {
+          slidesPerView: 6,
+          spaceBetween: 30,
+        },
+      }
+    });
+  }
 }
