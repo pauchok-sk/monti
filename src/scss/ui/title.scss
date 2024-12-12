@@ -1,3 +1,13 @@
+.title-1 {
+  font-size: 40px;
+  @include laptop-min {
+    font-size: 34px;
+  }
+  @include tablet {
+    font-size: 25px;
+  }
+}
+
 .title-2 {
   font-size: 35px;
   font-weight: 700;

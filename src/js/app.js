@@ -8,6 +8,9 @@ import slider from "./files/slider.js";
 import rentSale from "./files/rentSale.js";
 import fancy from "./files/fancy.js";
 import map from "./files/map.js";
+import showMore from "./files/showMore.js";
+import rangeSlider from "./files/rangeSlider.js";
+import catalogNav from "./files/catalogNav.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -17,3 +20,6 @@ slider();
 rentSale();
 fancy();
 map();
+showMore();
+rangeSlider();
+catalogNav();

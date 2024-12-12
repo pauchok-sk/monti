@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  &__btn {
+    @include flex-center;
+    border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--primary);
+
+    font-size: 18px;
+    font-weight: 500;
+
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+    @include hover {
+      color: white;
+      background-color: var(--primary);
+    }
+    &.active {
+      color: white;
+      background-color: var(--primary);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--gray);
+  a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 6px;
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 1px;
+      background-color: var(--gray);
+      right: 0;
+      transform: rotate(22deg);
+    }
+  }
+}

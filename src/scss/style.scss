@@ -7,6 +7,9 @@
 @import "./base/body-config";
 @import "./base/config-container";
 
+// libs
+@import "./libs/nouislider";
+
 // ui
 @import "./ui/button";
 @import "./ui/list";
@@ -14,6 +17,9 @@
 @import "./ui/dropdown";
 @import "./ui/input";
 @import "./ui/modal";
+@import "./ui/breadcrumbs";
+@import "./ui/show";
+@import "./ui/pagination";
 
 // features
 @import "./features/product";
@@ -29,5 +35,6 @@
 @import "./components/questions";
 @import "./components/seo";
 @import "./components/contacts";
+@import "./components/catalog";
 
 @import "./components/footer";

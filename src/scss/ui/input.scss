@@ -3,6 +3,11 @@
   border: none;
   background-color: transparent;
   border-radius: 0;
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 .input-policy {
   display: none;
@@ -43,7 +48,7 @@
     display: none;
     width: 10px;
     height: 10px;
-    background: url('@img/check.png') 0 0 / 100% 100% no-repeat;
+    background: url("@img/check.png") 0 0 / 100% 100% no-repeat;
     z-index: 1;
   }
 }
