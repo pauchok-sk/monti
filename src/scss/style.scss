@@ -10,6 +10,11 @@
 // libs
 @import "./libs/nouislider";
 
+// widgets
+@import "./widgets/compare";
+@import "./widgets/social";
+@import "./widgets/modal-rent";
+
 // ui
 @import "./ui/button";
 @import "./ui/list";
@@ -20,6 +25,7 @@
 @import "./ui/breadcrumbs";
 @import "./ui/show";
 @import "./ui/pagination";
+@import "./ui/tab";
 
 // features
 @import "./features/product";
@@ -36,5 +42,6 @@
 @import "./components/seo";
 @import "./components/contacts";
 @import "./components/catalog";
+@import "./components/product-main";
 
 @import "./components/footer";

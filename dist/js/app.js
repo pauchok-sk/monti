@@ -3776,6 +3776,30 @@
                 }
             });
         }
+        const productSlider = document.querySelector(".product-main__slider");
+        if (productSlider) {
+            const buttons = document.querySelectorAll(".product-main__slider-btn");
+            const swiper = new Swiper(productSlider, {
+                speed: 700,
+                modules: [ Autoplay ],
+                spaceBetween: 10,
+                autoplay: {
+                    delay: 3e3
+                },
+                on: {
+                    init: () => {
+                        buttons[0].classList.add("active");
+                        buttons.forEach(((btn, index) => {
+                            btn.addEventListener("click", (() => swiper.slideTo(index)));
+                        }));
+                    },
+                    slideChange: ({activeIndex}) => {
+                        buttons.forEach((btn => btn.classList.remove("active")));
+                        buttons[activeIndex].classList.add("active");
+                    }
+                }
+            });
+        }
     }
     function rentSale() {
         const btn = document.querySelector("#rent-sale-btn");
@@ -8523,6 +8547,7 @@
     });
     function fancy() {
         Oe.bind('[data-fancybox="reviews"]', {});
+        Oe.bind('[data-fancybox="product-main-gallery"]', {});
     }
     function map() {
         const contactsMap = document.querySelector("#map");

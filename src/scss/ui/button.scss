@@ -35,6 +35,16 @@
     }
   }
 
+  &._white {
+    background-color: white;
+    border-color: white;
+    color: var(--black);
+    @include hover {
+      color: white;
+      background-color: transparent;
+    }
+  }
+
   @include mobile {
     border-radius: 5px;
   }

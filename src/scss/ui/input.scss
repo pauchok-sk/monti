@@ -9,6 +9,9 @@
     margin: 0;
   }
 }
+.input-none {
+  display: none;
+}
 .input-policy {
   display: none;
   &:checked + label {
@@ -21,6 +24,7 @@
     }
   }
 }
+
 .label-policy {
   display: block;
   cursor: pointer;

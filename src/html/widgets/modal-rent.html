@@ -1,0 +1,28 @@
+<div data-modal="buy" class="modal">
+  <div class="modal__overlay">
+    <div class="modal__window">
+      <div class="modal__head">
+        <h2 class="modal__title">Заявка на аренду</h2>
+        <button class="btn modal__close">
+          <svg class="modal__icon-close">
+            <use xlink:href='img/icons/icons.svg#icon-close'></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-rent__product">
+        <img src="@img/product.jpg" alt="image" class="modal-rent__product-img">
+        <div>
+          <h5 class="modal-rent__product-title">Ножничный подъемник Haulotte Compact 10</h5>
+          <span class="modal-rent__product-price">от 7 910 ₽ / сут.</span>
+        </div>
+      </div>
+      <form action="#">
+        <input type="text" value="Ножничный подъемник Haulotte Compact 10 (от 7 910 ₽ / сут.)" class="input-none">
+        <input type="tel" placeholder="Ваш телефон" class="input modal__input">
+        <button class="btn btn-main modal__btn">Оставить заявку</button>
+        <input type="checkbox" id="rent-policy" class="input-policy">
+        <label for="rent-policy" class="label-policy">Согласие на обработку персональных данных</label>
+      </form>
+    </div>
+  </div>
+</div>

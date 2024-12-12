@@ -21,8 +21,8 @@ export default function slider() {
       breakpoints: {
         744: {
           spaceBetween: 16,
-        }
-      }
+        },
+      },
     });
   }
 
@@ -42,7 +42,35 @@ export default function slider() {
           slidesPerView: 6,
           spaceBetween: 30,
         },
-      }
+      },
+    });
+  }
+
+  const productSlider = document.querySelector(".product-main__slider");
+
+  if (productSlider) {
+    const buttons = document.querySelectorAll(".product-main__slider-btn");
+
+    const swiper = new Swiper(productSlider, {
+      speed: 700,
+      modules: [Autoplay],
+      spaceBetween: 10,
+      autoplay: {
+        delay: 3000,
+      },
+      on: {
+        init: () => {
+          buttons[0].classList.add("active");
+
+          buttons.forEach((btn, index) => {
+            btn.addEventListener("click", () => swiper.slideTo(index));
+          });
+        },
+        slideChange: ({ activeIndex }) => {
+          buttons.forEach((btn) => btn.classList.remove("active"));
+          buttons[activeIndex].classList.add("active");
+        },
+      },
     });
   }
 }
