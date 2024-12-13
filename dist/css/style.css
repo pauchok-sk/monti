@@ -691,7 +691,7 @@ body {
   display: none;
   width: 10px;
   height: 10px;
-  background: url(../img/check.webp) 0 0/100% 100% no-repeat;
+  background: url(../img/check.png) 0 0/100% 100% no-repeat;
   z-index: 1
 }
 .modal {
@@ -1930,7 +1930,7 @@ body {
 }
 .catalog__filters-filter::after {
   display: none;
-  background: url(../img/check.webp) 0 0/100% 100% no-repeat;
+  background: url(../img/check.png) 0 0/100% 100% no-repeat;
   background-color: var(--primary);
   border: 1px solid var(--mercury)
 }
