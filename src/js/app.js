@@ -11,6 +11,7 @@ import map from "./files/map.js";
 import showMore from "./files/showMore.js";
 import rangeSlider from "./files/rangeSlider.js";
 import catalogNav from "./files/catalogNav.js";
+import tab from "./files/tab.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -23,3 +24,4 @@ map();
 showMore();
 rangeSlider();
 catalogNav();
+tab();

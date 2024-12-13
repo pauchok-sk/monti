@@ -1,0 +1,22 @@
+.news {
+  padding: 40px 0px;
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__item {
+    font-size: 18px;
+    color: var(--primary);
+    text-decoration: underline;
+    @include hover {
+      text-decoration: none;
+    }
+    @include tablet-min {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 .product-main {
-  overflow: hidden;
   padding: 40px 0px 60px 0px;
+  @media (max-width: 840px) {
+    overflow: hidden;
+  }
   &__title {
     margin: 0px 0px 40px 0px;
     @include tablet {
@@ -10,6 +12,7 @@
   }
   &__body {
     display: flex;
+    align-items: start;
     gap: 45px;
     @include laptop {
       gap: 30px;
@@ -19,6 +22,8 @@
     }
   }
   &__gallery {
+    position: sticky;
+    top: 20px;
     max-width: 554px;
     width: 100%;
     @include laptop {
@@ -119,16 +124,6 @@
       flex-basis: 100%;
     }
   }
-  &__table-item {
-    @include flex-between;
-    gap: 10px;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 10px;
-    &:nth-child(odd) {
-      background-color: var(--gallery);
-    }
-  }
   &__price {
     flex: 1;
   }
@@ -190,5 +185,40 @@
     p {
       margin-top: 0;
     }
+  }
+  &__tabs {
+  }
+  &__tabs-nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: var(--gallery);
+    margin-bottom: 30px;
+  }
+  &__btn-tab {
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+    @include hover {
+      color: white;
+      background-color: var(--primary);
+    }
+    &.active {
+      color: white;
+      background-color: var(--primary);
+    }
+    @include tablet-min {
+      font-size: 14px;
+    }
+    @include mobile {
+      width: 50%;
+    }
+  }
+  &__tab-table {
+    width: 100%;
   }
 }

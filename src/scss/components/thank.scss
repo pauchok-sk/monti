@@ -1,0 +1,40 @@
+.thank {
+  @include flex-center;
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+  padding: 40px 0px;
+  overflow: hidden;
+  z-index: 1;
+  &__img {
+    position: absolute;
+    width: 1150px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    @include laptop {
+      left: -400px;
+    }
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__title {
+    margin: 0px auto 10px auto;
+    width: fit-content;
+    background-color: white;
+  }
+  &__content {
+    font-size: 25px;
+    margin: 0px 0px 20px 0px;
+    @include tablet-min {
+      font-size: 18px;
+    }
+  }
+  &__btn {
+    min-height: 50px;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

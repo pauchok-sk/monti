@@ -8,6 +8,7 @@
     }
   }
   &-sub {
+    position: relative;
     @include hover {
       .dropdown-hover__item-sub {
         opacity: 1;

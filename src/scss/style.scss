@@ -26,6 +26,7 @@
 @import "./ui/show";
 @import "./ui/pagination";
 @import "./ui/tab";
+@import "./ui/table";
 
 // features
 @import "./features/product";
@@ -43,5 +44,10 @@
 @import "./components/contacts";
 @import "./components/catalog";
 @import "./components/product-main";
+@import "./components/jobs";
+@import "./components/single";
+@import "./components/news";
+@import "./components/page-error";
+@import "./components/thank";
 
 @import "./components/footer";

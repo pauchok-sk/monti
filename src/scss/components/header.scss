@@ -46,7 +46,7 @@
           }
         }
         .dropdown-hover__item {
-          position: static;
+          position: static !important;
           background-color: transparent;
           box-shadow: none;
           opacity: 1;
@@ -235,9 +235,9 @@
       border: 1px solid var(--mercury);
       box-shadow: none;
       width: 410px;
-      top: 100%;
+      top: 0;
       @include laptop {
-        position: static;
+        position: static !important;
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
@@ -252,11 +252,11 @@
       &-sub {
         border-radius: 10px;
         left: 100%;
-        top: 100%;
+        top: 0;
         width: 410px;
         border: 1px solid var(--mercury);
         @include laptop {
-          position: static;
+          position: static !important;
           opacity: 1;
           visibility: visible;
           transform: translateY(0);

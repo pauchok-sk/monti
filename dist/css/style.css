@@ -584,6 +584,9 @@ body {
 .dropdown-hover {
   position: relative
 }
+.dropdown-hover-sub {
+  position: relative
+}
 .dropdown-hover__btn {
   display: flex;
   align-items: center;
@@ -850,6 +853,18 @@ body {
 .tab.active {
   display: block
 }
+.table__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 10px
+}
+.table__item:nth-child(odd) {
+  background-color: var(--gallery)
+}
 .product {
   border-radius: 10px;
   border: 1px solid var(--mercury);
@@ -1054,12 +1069,12 @@ body {
   border: 1px solid var(--mercury);
   box-shadow: none;
   width: 410px;
-  top: 100%
+  top: 0
 }
 .header__catalog-item .dropdown-hover__item-sub {
   border-radius: 10px;
   left: 100%;
-  top: 100%;
+  top: 0;
   width: 410px;
   border: 1px solid var(--mercury)
 }
@@ -2016,7 +2031,6 @@ body {
   margin-bottom: 50px
 }
 .product-main {
-  overflow: hidden;
   padding: 40px 0 60px 0
 }
 .product-main__title {
@@ -2024,9 +2038,12 @@ body {
 }
 .product-main__body {
   display: flex;
+  align-items: start;
   gap: 45px
 }
 .product-main__gallery {
+  position: sticky;
+  top: 20px;
   max-width: 554px;
   width: 100%
 }
@@ -2077,18 +2094,6 @@ body {
 .product-main__table {
   flex: 0 1 350px
 }
-.product-main__table-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 10px 15px;
-  font-size: 16px;
-  border-radius: 10px
-}
-.product-main__table-item:nth-child(odd) {
-  background-color: var(--gallery)
-}
 .product-main__price {
   flex: 1
 }
@@ -2133,6 +2138,190 @@ body {
 }
 .product-main__content p {
   margin-top: 0
+}
+.product-main__tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: var(--gallery);
+  margin-bottom: 30px
+}
+.product-main__btn-tab {
+  padding: 12px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: color .2s ease,background-color .2s ease
+}
+.product-main__btn-tab.active {
+  color: #fff;
+  background-color: var(--primary)
+}
+.product-main__tab-table {
+  width: 100%
+}
+.jobs {
+  padding: 40px 0 50px 0
+}
+.jobs__title {
+  margin: 0 0 35px 0
+}
+.jobs__content {
+  font-size: 16px;
+  margin-bottom: 30px
+}
+.jobs__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}
+.jobs__item {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--primary);
+  text-decoration: underline;
+  font-size: 18px
+}
+.single {
+  padding: 40px 0 50px 0
+}
+.single__title {
+  margin: 0 0 35px 0
+}
+.single__content {
+  font-size: 16px;
+  margin-bottom: 30px
+}
+.single__table {
+  max-width: 790px;
+  width: 100%
+}
+.single__gallery {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(15,1fr);
+  gap: 22px
+}
+.single__gallery-btn {
+  border: 1px solid var(--primary);
+  overflow: hidden;
+  border-radius: 10px;
+  grid-column: 5 span
+}
+.single__gallery-btn:nth-child(n+4) {
+  grid-column: 3 span
+}
+.single__gallery-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.news {
+  padding: 40px 0
+}
+.news__title {
+  margin-bottom: 15px
+}
+.news__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}
+.news__item {
+  font-size: 18px;
+  color: var(--primary);
+  text-decoration: underline
+}
+.page-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+  padding: 40px 0;
+  overflow: hidden;
+  z-index: 1
+}
+.page-error__img {
+  position: absolute;
+  width: 1150px;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+.page-error__title {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fff
+}
+.page-error__number-wrapper {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto
+}
+.page-error__number {
+  font-size: 300px;
+  line-height: 100%;
+  font-weight: 700;
+  background-image: linear-gradient(90deg,#57a012 1.31%,#9aeb4e 52.6%,#57a012 97.24%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1
+}
+.page-error__number-back {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  color: #000;
+  opacity: .74;
+  font-size: 300px;
+  line-height: 100%;
+  font-weight: 700;
+  z-index: -1
+}
+.thank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+  padding: 40px 0;
+  overflow: hidden;
+  z-index: 1
+}
+.thank__img {
+  position: absolute;
+  width: 1150px;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+.thank__title {
+  margin: 0 auto 10px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fff
+}
+.thank__content {
+  font-size: 25px;
+  margin: 0 0 20px 0
+}
+.thank__btn {
+  min-height: 50px;
+  max-width: 240px;
+  width: 100%;
+  margin: 0 auto
 }
 .footer {
   padding-bottom: 40px
@@ -3931,7 +4120,7 @@ html.with-fancybox body.hide-scrollbar {
     overflow-y: auto
   }
   .header__catalog-item .dropdown-hover__item {
-    position: static;
+    position: static!important;
     opacity: 1;
     visibility: visible;
     -webkit-transform: translateY(0);
@@ -3944,7 +4133,7 @@ html.with-fancybox body.hide-scrollbar {
     font-size: 14px
   }
   .header__catalog-item .dropdown-hover__item-sub {
-    position: static;
+    position: static!important;
     opacity: 1;
     visibility: visible;
     -webkit-transform: translateY(0);
@@ -4006,6 +4195,12 @@ html.with-fancybox body.hide-scrollbar {
   }
   .product-main__table {
     flex-basis: 100%
+  }
+  .page-error__img {
+    left: -400px
+  }
+  .thank__img {
+    left: -400px
   }
 }
 @media (max-width:1289px) {
@@ -4181,6 +4376,21 @@ html.with-fancybox body.hide-scrollbar {
   .contacts__map {
     height: 240px
   }
+  .single__gallery-btn {
+    grid-column: 5 span!important
+  }
+  .page-error__img {
+    display: none
+  }
+  .page-error__number {
+    font-size: 200px
+  }
+  .page-error__number-back {
+    font-size: 200px
+  }
+  .thank__img {
+    display: none
+  }
 }
 @media (max-width:910px) {
   .header__catalog-dropdown {
@@ -4222,6 +4432,9 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 @media (max-width:840px) {
+  .product-main {
+    overflow: hidden
+  }
   .product-main__body {
     display: block
   }
@@ -4377,6 +4590,12 @@ html.with-fancybox body.hide-scrollbar {
     text-align: center;
     margin-bottom: 25px
   }
+  .jobs__content {
+    font-size: 14px
+  }
+  .single__content {
+    font-size: 14px
+  }
   .footer__body {
     padding: 0;
     background-color: rgba(0,0,0,0);
@@ -4441,7 +4660,7 @@ html.with-fancybox body.hide-scrollbar {
     transition: transform .2s ease,-webkit-transform .2s ease
   }
   .header__nav-list li .dropdown-hover__item {
-    position: static;
+    position: static!important;
     background-color: rgba(0,0,0,0);
     box-shadow: none;
     opacity: 1;
@@ -4489,6 +4708,28 @@ html.with-fancybox body.hide-scrollbar {
   }
   .product-main__price-btn {
     font-size: 16px
+  }
+  .product-main__btn-tab {
+    font-size: 14px
+  }
+  .single__gallery {
+    grid-template-columns: repeat(12,1fr);
+    margin-top: 40px
+  }
+  .single__gallery-btn {
+    grid-column: 6 span!important
+  }
+  .news__item {
+    font-size: 16px
+  }
+  .page-error__number {
+    font-size: 128px
+  }
+  .page-error__number-back {
+    font-size: 128px
+  }
+  .thank__content {
+    font-size: 18px
   }
 }
 @media (max-width:553px) {
@@ -4570,6 +4811,9 @@ html.with-fancybox body.hide-scrollbar {
   }
   .product-main__content {
     font-size: 12px
+  }
+  .product-main__btn-tab {
+    width: 50%
   }
   .footer__item {
     flex-basis: 100%
@@ -4671,6 +4915,16 @@ html.with-fancybox body.hide-scrollbar {
     color: #fff;
     background-color: var(--primary)
   }
+  .product-main__btn-tab:hover {
+    color: #fff;
+    background-color: var(--primary)
+  }
+  .jobs__item:hover {
+    text-decoration: none
+  }
+  .news__item:hover {
+    text-decoration: none
+  }
   .footer__item-list a:hover::before {
     right: 0
   }
@@ -4770,6 +5024,16 @@ html.with-fancybox body.hide-scrollbar {
   .catalog__main-btn:active {
     color: #fff;
     background-color: var(--primary)
+  }
+  .product-main__btn-tab:active {
+    color: #fff;
+    background-color: var(--primary)
+  }
+  .jobs__item:active {
+    text-decoration: none
+  }
+  .news__item:active {
+    text-decoration: none
   }
   .footer__item-list a:active::before {
     right: 0
