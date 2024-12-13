@@ -1206,13 +1206,18 @@ body {
   background-color: #fff
 }
 .intro__body {
-  display: none;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
   align-items: stretch;
+  display: flex;
   gap: 30px;
   margin-bottom: 50px
 }
 .intro__body.active {
-  display: flex
+  position: static;
+  opacity: 1;
+  visibility: visible
 }
 .intro__link {
   position: relative;

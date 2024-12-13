@@ -51,15 +51,20 @@
     }
   }
   &__body {
-    display: none;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
     align-items: stretch;
+    display: flex;
     gap: 30px;
     margin-bottom: 50px;
     @include laptop-middle {
       flex-wrap: wrap;
     }
     &.active {
-      display: flex;
+      position: static;
+      opacity: 1;
+      visibility: visible;
     }
   }
   &__link {
