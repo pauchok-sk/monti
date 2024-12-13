@@ -345,5 +345,7 @@ template {
  */
 
 [hidden] {
-  display: none;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
 }

@@ -172,7 +172,9 @@ template {
   display: none
 }
 [hidden] {
-  display: none
+  position: fixed;
+  opacity: 0;
+  visibility: hidden
 }
 :root {
   --black: #363636;
